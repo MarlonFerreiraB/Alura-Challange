@@ -1,0 +1,318 @@
+/* Variaveis */
+:root{
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria:white;
+    --button-blue: #0A3871;
+    --button-grey: #D8DFE8;
+}
+/* Variaveis */
+
+/* ALL */
+body{
+    background-color: var(--cor-primaria);
+    padding: 0;
+    margin: 0;
+}
+/* ALL */
+
+/* Button */
+#blue{
+    background-color: var(--button-blue);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#grey{
+    background-color: var(--button-grey);
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* Button */
+
+
+
+/* MOBILE */
+header{             
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width: 30vw;
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 48vh;
+}
+textarea {
+    width: 300px;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.textcrip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+p{
+    font-size: 1rem;
+    margin-right: 23px;
+}
+
+section{
+    margin-top: 12px;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: white;
+    height: 100%;
+    width: 85%;
+}
+
+section div button{
+    background-color:white;
+    color: #0A3871;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
+    width: 60%;
+}
+/* MOBILE */
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    header img{
+        width: 20vw;
+    }
+
+    textarea {
+        width: 600px;
+        height: 300px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+
+    .textcrip{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+
+    /* Button Tablet */
+#blue{
+    background-color: var(--button-blue);
+    color: white;
+    width: 42%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#grey{
+    background-color: var(--button-grey);
+    width: 42%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* Button Tablet */
+
+section{
+    margin-top: 24px;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+section div button{
+    background-color:white;
+    color: #0A3871;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+}
+
+/* tablet */
+
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    header{             
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        width: 60%;
+    }
+    
+    header img{
+        width: 10vw;
+        padding: 15px 0 0 15px;
+    }
+
+    main{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 48vh;
+    }
+    textarea {
+        width:50em;
+        height: 400px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color:var(--cor-primaria);
+        border: none;
+        font-size: 16px;
+        resize: none;
+    }
+    .textcrip{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin-top: 16em;
+    }
+
+    section{
+        margin-top: 24px;
+        width: 44%;
+        height: 95vh;
+        position:relative;
+        top: -5em;
+    }
+
+/* Button Tablet */
+#blue{
+    background-color: var(--button-blue);
+    color: white;
+    width: 42%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#grey{
+    background-color: var(--button-grey);
+    width: 42%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* Button Tablet */
+}
+/* desktop */
+
+@media screen and (min-width: 2560px) {
+
+    header{             
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        width: 60%;
+    }
+    
+    header img{
+        width: 10vw;
+        padding: 15px 0 0 15px;
+    }
+
+    main{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        height: 48vh;
+    }
+    textarea {
+        width:80em;
+        height: 400px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color:var(--cor-primaria);
+        border: none;
+        font-size: 16px;
+        resize: none;
+    }
+    .textcrip{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        margin-top: 16em;
+    }
+
+    #blue{
+        background-color: var(--button-blue);
+        color: white;
+        width: 40%;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+    #grey{
+        background-color: var(--button-grey);
+        width: 35%;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+}
